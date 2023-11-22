@@ -11,8 +11,10 @@ This document describes the high-level usage of PowerShell scripts, during the S
 
 ## Step 1: Provision Customer Specific Custom Domains in Entra ID 
 Six Custom Domains are created and can be used as PSTN Gateways for your service, these gateways are used to route your calls. Two custom domains are made in each region for high availability. Only the Custom Domains in the regions you are active in are Activated. This is based on the Telephone Numbers allocated to your service in the platform
+
 The below scripts creates the six Custom domains in your Tenant based on the Unique PSTN Domains that have been assigned to your service.
-Script Link:
+
+**Script Link:**
 
 ## Step 2: Verification of Custom Domains in Entra ID 
 All six domains are Verified ready to be Activated for your Service if required
