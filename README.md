@@ -4,6 +4,7 @@ This document describes the high-level usage of PowerShell scripts, during the S
 
 ## Prerequisites:
 1: Access to ucplatform.io 
+
 2: Global Admin account in the Microsoft Tenant that requires the Teams Direct Routing configuration
 
 ** Script Implementation Steps **
