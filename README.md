@@ -7,7 +7,7 @@ This document describes the high-level usage of PowerShell scripts, during the S
 
 2: Global Admin account in the Microsoft Tenant that requires the Teams Direct Routing configuration
 
-**Script Implementation Steps**
+# Script Implementation Steps
 
 ## Step 1: Provision Customer Specific Custom Domains in Entra ID 
 Six Custom Domains are created and can be used as PSTN Gateways for your service, these gateways are used to route your calls. Two custom domains are made in each region for high availability. Only the Custom Domains in the regions you are active in are Activated. This is based on the Telephone Numbers allocated to your service in the platform
