@@ -29,12 +29,15 @@ Based on your Telephone Numbers in our System, we Activate the Custom Domains in
 **Example 2:** Telephone Number exist in both France and the US = Four Custom Domains are Activated, two in the Americas and two in Europe
 
 Each Custom Domain becomes active by adding a single User account (HALO.EnterpriseVoice) to each domain and assign the User account with a Microsoft License (E1,E3,E5) The licenses do not require voice. These accounts cannot be removed and must remain licensed
-The below script creates the Users and Assigns a license. The license was selected by the party performing the Action during the process
+
+The below script Adds Users, Assigns Licenses, Adds Voice Polices then Adds Emergency Policies for the Regions and Countries your company is Active in
 
 **Script Link:**
 
 ## Step 4: Add rights to Service Manager Enterprise App
 For the Service Manager application to be able to access the Voice Configuration in the Tenant it requires Teams Administrator role. This role allows it to connect and check the Voice settings are correctly configured and count the number of Telephone Numbers utilizing the platform.
+
+The below script assigns the RBAC role of Teams Administator to the Service Manager Enterprise App
 
 **Script Link:**
 
