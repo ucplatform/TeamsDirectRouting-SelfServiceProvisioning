@@ -18,9 +18,9 @@ All six domains are Verified ready to be Activated for your Service if required
 
 The below script collects the MX records from your Tenant for the Custom Domains, creates the associated record in the parent domain (not your tenant) and then verifies the Custom Domains in your Tenant
 
-##Script Link:
+## Script Link:
 
-##Step 3: Provision single user in each Custom Domain and assign License to activate the domain as a PSTN Gateway, then provision the Voice Settings in Teams to create Direct Routing Policies and Emergency Services policies 
+## Step 3: Provision single user in each Custom Domain and assign License to activate the domain as a PSTN Gateway, then provision the Voice Settings in Teams to create Direct Routing Policies and Emergency Services policies 
 Based on your Telephone Numbers in our System, we Activate the Custom Domains in the Regions you are active.
 
 Example 1: All Telephone Numbers are in the US only +1 = Four Custom Domains in the Americas Region are Activated 
@@ -30,12 +30,12 @@ Example 2: Telephone Number exist in both France and the US = Four Custom Domain
 Each Custom Domain becomes active by adding a single User account (HALO.EnterpriseVoice) to each domain and assign the User account with a Microsoft License (E1,E3,E5) The licenses do not require voice. These accounts cannot be removed and must remain licensed
 The below script creates the Users and Assigns a license. The license was selected by the party performing the Action during the process
 
-##Script Link:
+## Script Link:
 
 ##Step 4: Add rights to Service Manager Enterprise App
 For the Service Manager application to be able to access the Voice Configuration in the Tenant it requires Teams Administrator role. This role allows it to connect and check the Voice settings are correctly configured and count the number of Telephone Numbers utilizing the platform.
 
-##Script Link:
+## Script Link:
 
-##Conclusion
+## Conclusion
 The above 4 scripts are the only scripts run against your Tenant during the Self-Service configuration journey
