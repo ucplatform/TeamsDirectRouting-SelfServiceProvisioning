@@ -1,4 +1,5 @@
 Scripting Repository for Teams Direct Routing - Self Service Provisioning 
+
 This document describes the high-level usage of PowerShell scripts, during the Self-Service Provisioning journey for Teams Direct Routing through ucplatform.io
 
 Prerequisites:
