@@ -19,9 +19,9 @@ The below scripts creates the six Custom domains in your Microsoft Tenant based 
 ## Step 2: Verification of Custom Domains in Entra ID 
 All six domains are Verified ready to be Activated for your Service if required
 
-The below script collects the MX records from your Tenant for the Custom Domains, creates the associated record in the parent domain (not your tenant) and then verifies the Custom Domains in your Tenant
+The below script verifies all the Custom Domains the HALO Service has created then removes the TXT DNS record from the HALO DNS Service 
 
-**Script Link:**
+**Script Link:** 
 
 ## Step 3: Provision single user in each Custom Domain and assign License to activate the domain as a PSTN Gateway, then provision the Voice Settings in Teams to create Direct Routing Policies and Emergency Services policies 
 Based on your Telephone Numbers in our System, we Activate the Custom Domains in the Regions you are active.
