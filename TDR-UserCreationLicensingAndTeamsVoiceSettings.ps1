@@ -4,6 +4,7 @@
 
 .DESCRIPTION
     Base configuration includes, Creating the holding accounts to activate the domain and assigning the licenses the customer selected. Configuing the pstn and voice routing policies based on the Customers requirements, Configuring E911 settings in customers tenant
+    @@@@@ = Variables that include System Names, connection strings or Details that have been removed for saftey reasons 
 
 .INPUTS
     Provisioning Portal Via Webhook
