@@ -4,6 +4,7 @@
  
 .DESCRIPTION
     Verify all custom domains in the Customer Microsoft Tenant
+    @@@@@ = Variables that include System Names, connection strings or Details that have been removed for saftey reasons 
 
 .INPUTS
     Provisioning Portal Via Webhook
