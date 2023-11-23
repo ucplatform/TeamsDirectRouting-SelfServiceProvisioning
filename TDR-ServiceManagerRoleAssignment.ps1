@@ -4,7 +4,8 @@
 
 .DESCRIPTION
     Assign EA-HALO-ServiceManager the Directory Role - Teams Administrator in Customers Tenant
-
+    @@@@@ = Variables that include System Names, connection strings or Details that have been removed for saftey reasons 
+    
 .INPUTS
     Portal Via Webhook
 
