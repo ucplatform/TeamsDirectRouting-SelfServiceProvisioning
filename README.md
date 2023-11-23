@@ -48,4 +48,4 @@ The above 4 scripts are the only scripts run against your Tenant during the Auto
 
 For more information on the Teams Direct Routing - Configuration the following link will descibe the Enterprise Apps and the process steps involved when running the Automated Teams Direct Routing Provisioning
 
-**Link:** 
+**Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/Teams%20Direct%20Routing%20-%20Tenant%20Configuration%20Overview.pdf
