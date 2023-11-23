@@ -3,7 +3,7 @@
     Phase 1: Custom Domains and TXT Record Creation
    
 .DESCRIPTION
-    Base configuration includes, Adding Custom Domains details to customers tenant and adding associated TXT Record to DNS ready for domain verification
+    Base configuration includes, Adding Custom Domains details to customers tenant and adding associated TXT Records to HALOs DNS Service ready for domain verification
 
 .INPUTS
     Provisioning Portal Via Webhook
