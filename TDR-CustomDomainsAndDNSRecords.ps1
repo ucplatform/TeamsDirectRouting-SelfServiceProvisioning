@@ -4,7 +4,8 @@
    
 .DESCRIPTION
     Base configuration includes, Adding Custom Domains details to customers tenant and adding associated TXT Records to HALOs DNS Service ready for domain verification
-
+    @@@@@ = Variables that include System Names, connection strings or Details that have been removed for saftey reasons 
+    
 .INPUTS
     Provisioning Portal Via Webhook
 #>
