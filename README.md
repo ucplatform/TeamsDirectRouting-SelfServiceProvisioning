@@ -14,7 +14,7 @@ Six Custom Domains are created and can be used as PSTN Gateways for your service
 
 The below scripts creates the six Custom domains in your Microsoft Tenant based on the Unique PSTN Domains that have been assigned to your service. Then adds the associated TXT records to a HALO DNS service (not customer DNS) ready for domain verification
 
-**Script Link:**
+**Script Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/TDR-CustomDomainsAndDNSRecords.ps1
 
 ## Step 2: Verification of Custom Domains in Entra ID 
 All six domains are Verified ready to be Activated for your Service if required
