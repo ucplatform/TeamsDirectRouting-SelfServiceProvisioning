@@ -34,7 +34,7 @@ Each Custom Domain becomes active by adding a single User account (HALO.Enterpri
 
 The below script Adds Users, Assigns Licenses, Adds Voice Polices then Adds Emergency Policies for the Regions and Countries your company is Active in
 
-**Script Link:**
+**Script Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/TDR-UserCreationLicensingAndTeamsVoiceSettings.ps1
 
 ## Step 4: Add rights to Service Manager Enterprise App
 For the Service Manager application to be able to access the Voice Configuration in the Tenant it requires Teams Administrator role. This role allows it to connect and check the Voice settings are correctly configured and count the number of Telephone Numbers utilizing the platform.
