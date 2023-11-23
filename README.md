@@ -45,3 +45,7 @@ The below script assigns the RBAC role of Teams Administator to the Service Mana
 
 ## Conclusion
 The above 4 scripts are the only scripts run against your Tenant during the Automated Self-Service configuration journey
+
+For more information on the Teams Direct Routing - Configuration the following link will descibe the Enterprise Apps and the process steps involved when running the Automated Teams Direct Routing Provisioning
+
+**Link:** 
