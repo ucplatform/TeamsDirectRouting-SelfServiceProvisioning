@@ -21,7 +21,7 @@ All six domains are Verified ready to be Activated for your Service if required
 
 The below script verifies all the Custom Domains the HALO Service has created then removes the TXT DNS record from the HALO DNS Service 
 
-**Script Link:** 
+**Script Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/TDR-CustomDomainsVerification.ps1
 
 ## Step 3: Provision single user in each Custom Domain and assign License to activate the domain as a PSTN Gateway, then provision the Voice Settings in Teams to create Direct Routing Policies and Emergency Services policies 
 Based on your Telephone Numbers in our System, we Activate the Custom Domains in the Regions you are active.
