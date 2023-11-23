@@ -26,7 +26,7 @@ The below script verifies all the Custom Domains the HALO Service has created th
 ## Step 3: Provision single user in each Custom Domain and assign License to activate the domain as a PSTN Gateway, then provision the Voice Settings in Teams to create Direct Routing Policies and Emergency Services policies 
 Based on your Telephone Numbers in our System, we Activate the Custom Domains in the Regions you are active.
 
-**Example 1:** All Telephone Numbers are in the US only +1 = Four Custom Domains in the Americas Region are Activated 
+**Example 1:** All Telephone Numbers are in the US only +1 = Two Custom Domains in the Americas Region are Activated 
 
 **Example 2:** Telephone Number exist in both France and the US = Four Custom Domains are Activated, two in the Americas and two in Europe
 
