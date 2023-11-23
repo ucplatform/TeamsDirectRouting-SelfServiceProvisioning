@@ -79,28 +79,27 @@ $Domains += $input.MSTeamsID + "." + "APAC" + "2drms.@@@@@"
 foreach ($i in $Domains){
 $Error.Clear()
 
-try {
+    try {
         $apiUrl = "https://graph.microsoft.com/v1.0/domains/$i"
         Invoke-RestMethod -Headers @{Authorization = "Bearer $($token)"} -Uri $apiUrl -Method Get
-}
-catch {
-$Error.Clear()
-$body= @"
-{
-"id": "$i"
-}
-"@
-
-    try {
-        $apiUrl = 'https://graph.microsoft.com/v1.0/domains'
-        Invoke-RestMethod -Headers @{Authorization = "Bearer $($token)"} -Uri $apiUrl -Body $body -Method Post -Contenttype "application/json"
-    } catch {
-        JobStatusUpdate -job_id $PSPrivateMetadata.JobId.Guid -result "Failed" -des "#SDA-Failed to add domin $i" -orderid $input.OrderID -ProvStepID "3"
-        $Success = "1"
     }
+    catch {
+    $Error.Clear()
+    $body= @"
+    {
+    "id": "$i"
+    }
+    "@
 
-}
+        try {
+            $apiUrl = 'https://graph.microsoft.com/v1.0/domains'
+            Invoke-RestMethod -Headers @{Authorization = "Bearer $($token)"} -Uri $apiUrl -Body $body -Method Post -Contenttype "application/json"
+        } catch {
+            JobStatusUpdate -job_id $PSPrivateMetadata.JobId.Guid -result "Failed" -des "#SDA-Failed to add domin $i" -orderid $input.OrderID -ProvStepID "3"
+            $Success = "1"
+        }
 
+     }
 
     #Get MX Record for Domain
     $apiUrl = "https://graph.microsoft.com/v1.0/domains/$i/verificationDnsRecords"
@@ -114,28 +113,28 @@ $body= @"
     #Varible for TenantID
     $CredsSCTenant = Get-AutomationPSCredential -Name '@@@@@'
     $TenantId = $CredsSCTenant.Username
-    
+
+    #Connect to HALO DNS Service
     Connect-AzAccount -Credential $Credential -Tenant $TenantId
 
+    #Add TXT records to the DNS Service
     Set-AzContext -SubscriptionId "@@@@@"
     $ShortDomain = $i.SubString(0,24)
-    
-    
     $record = Get-AzDnsRecordSet -ResourceGroupName "uksouth_dns" -ZoneName @@@@@ -Name $ShortDomain -RecordType TXT
-
+    #If record exists do nothing, else add record
     if ($record){
     }
     else {
-    $Error.Clear()    
-    New-AzDnsRecordSet -Name $ShortDomain -RecordType TXT -ZoneName @@@@@ -ResourceGroupName "uksouth_dns" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$mxrecord")
+        $Error.Clear()    
+        New-AzDnsRecordSet -Name $ShortDomain -RecordType TXT -ZoneName @@@@@ -ResourceGroupName "uksouth_dns" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$mxrecord")
     }
     Disconnect-AZAccount
 }
 
 #Update Implementation Status
 if ($Success = "1"){
-JobStatusUpdate -job_id $PSPrivateMetadata.JobId.Guid -result "Failed" -des $ex -orderid $input.OrderID -ProvStepID "3"
+    JobStatusUpdate -job_id $PSPrivateMetadata.JobId.Guid -result "Failed" -des $ex -orderid $input.OrderID -ProvStepID "3"
 }
 else {
-JobStatusUpdate -job_id $PSPrivateMetadata.JobId.Guid -result "Success" -des $ex -orderid $input.OrderID -ProvStepID "3"
+    JobStatusUpdate -job_id $PSPrivateMetadata.JobId.Guid -result "Success" -des $ex -orderid $input.OrderID -ProvStepID "3"
 }
