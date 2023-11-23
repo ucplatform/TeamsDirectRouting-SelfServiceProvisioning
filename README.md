@@ -44,4 +44,4 @@ The below script assigns the RBAC role of Teams Administator to the Service Mana
 **Script Link:**
 
 ## Conclusion
-The above 4 scripts are the only scripts run against your Tenant during the Self-Service configuration journey
+The above 4 scripts are the only scripts run against your Tenant during the Automated Self-Service configuration journey
