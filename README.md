@@ -41,7 +41,7 @@ For the Service Manager application to be able to access the Voice Configuration
 
 The below script assigns the RBAC role of Teams Administator to the Service Manager Enterprise App
 
-**Script Link:**
+**Script Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/TDR-ServiceManagerRoleAssignment.ps1
 
 ## Conclusion
 The above 4 scripts are the only scripts run against your Tenant during the Automated Self-Service configuration journey
