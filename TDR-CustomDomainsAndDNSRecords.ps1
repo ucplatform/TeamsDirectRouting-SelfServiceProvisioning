@@ -19,4 +19,4 @@ $Url = 'https://graph.microsoft.com/v1.0/domains'
 $Url = "https://graph.microsoft.com/v1.0/domains/$i/verificationDnsRecords"
 
 #Add TXT record to external none customer domain
-New-AzDnsRecordSet -Name $ShortDomain -RecordType TXT -ZoneName @@@@@ -ResourceGroupName "uksouth_dns" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$mxrecord")
+New-AzDnsRecordSet -Name $ver -RecordType TXT -ZoneName @@@@@ -ResourceGroupName "ver" -Ttl 3600 -DnsRecords (New-AzDnsRecordConfig -Value "$ver")
