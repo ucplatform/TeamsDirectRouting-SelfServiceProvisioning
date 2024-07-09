@@ -22,4 +22,4 @@ $apiUrl = 'https://graph.microsoft.com/v1.0/servicePrincipals?$search="appId:@@@
 
 
 #Graph API to customer tenant to add Ent App to Teams Administrator Directory Role
-$apiUrl = "https://graph.microsoft.com/v1.0/directoryRoles/$TeamsAdminID/members/`$ref"
+$apiUrl = "https://graph.microsoft.com/v1.0/directoryRoles/$ver/members/`$ref"
