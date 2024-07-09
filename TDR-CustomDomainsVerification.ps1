@@ -12,7 +12,7 @@
 #>
 
 #Verify in customers Microsoft Tenant, will retry while errors
-$apiUrl = "https://graph.microsoft.com/v1.0/domains/$i/verify"
+$apiUrl = "https://graph.microsoft.com/v1.0/domains/$ver/verify"
           
 ## Remove TXT records following successful verification in HALO system
-Remove-AzDnsRecordSet -Name $ShortDomain -RecordType TXT -ZoneName @@@@@ -ResourceGroupName "uksouth_dns"
+Remove-AzDnsRecordSet -Name $ver -RecordType TXT -ZoneName @@@@@ -ResourceGroupName "ver"
