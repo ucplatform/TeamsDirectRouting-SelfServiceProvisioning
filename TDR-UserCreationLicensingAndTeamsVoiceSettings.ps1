@@ -119,11 +119,7 @@ New-CsOnlineVoiceRoute -Identity $ver -Priority 0 -Description $ver -NumberPatte
 
 
 New-CsTeamsEmergencyCallingPolicy -Identity $ver -Description $ver
-
 $en1 =  New-CsTeamsEmergencyNumber -EmergencyDialString "@@@@@" -OnlinePSTNUsage $ver
-
-
 New-CsTeamsEmergencyCallRoutingPolicy -Identity $ver -EmergencyNumbers @{add=$ver} -Description $ver
-
 New-CsTeamsEmergencyNumber -EmergencyDialString $ver -OnlinePSTNUsage $ver
 Set-CsTeamsEmergencyCallRoutingPolicy -Identity $ver -EmergencyNumbers @{remove=$ver}
