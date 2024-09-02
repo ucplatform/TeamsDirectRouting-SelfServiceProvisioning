@@ -10,14 +10,14 @@ This document describes the high-level usage of PowerShell scripts, during the S
 # Script Implementation Steps
 
 ## Step 1: Provision Customer Specific Custom Domains in Entra ID 
-Six Custom Domains are created and can be used as PSTN Gateways for your service, these gateways are used to route your calls. Two custom domains are created in each region for high availability. Only the Custom Domains in the regions you are active in are Activated. This is based on the Telephone Numbers allocated to your service in the platform
+Up to six Custom Domains are created and can be used as PSTN Gateways for your service, these gateways are used to route your calls. Two custom domains are created in each region for high availability. Only the Custom Domains in the regions you are active in are Activated. This is based on the Telephone Numbers allocated to your service in the platform
 
 The below script creates the six Custom domains in your Microsoft Tenant based on the Unique PSTN Domains that have been assigned to your service. Then adds the associated TXT records to a HALO DNS service (not customer DNS) ready for domain verification
 
 **Script Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/TDR-CustomDomainsAndDNSRecords.ps1
 
 ## Step 2: Verification of Custom Domains in Entra ID 
-All six domains are Verified ready to be Activated for your Service if required
+Up to six domains are Verified ready to be Activated for your Service if required
 
 The below script verifies all the Custom Domains the HALO Service has created then removes the TXT DNS record from the HALO DNS Service 
 
