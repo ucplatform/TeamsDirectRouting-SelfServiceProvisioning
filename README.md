@@ -32,6 +32,8 @@ Based on your Telephone Numbers in our System, we Activate the Custom Domains in
 
 Each Custom Domain becomes active by adding a single User account (HALO.EnterpriseVoice) to each domain and assign the User account with a Microsoft License (E1,E3,E5) The licenses do not require voice. These accounts cannot be removed and must remain licensed
 
+HALO then configures the Voice Routing Polices based on the countries you have numbers in. Using example 1 above it would make 3 policies for the US only, using example 2 it would make 6 policies, 3 for France and 3 for the US 
+
 The below script Adds Users, Assigns Licenses, Adds Voice Polices then Adds Emergency Policies for the Regions and Countries your company is Active in
 
 **Script Link:** https://github.com/ucplatform/TeamsDirectRouting-SelfServiceProvisioning/blob/main/TDR-UserCreationLicensingAndTeamsVoiceSettings.ps1
@@ -45,6 +47,7 @@ The below script assigns the RBAC role of Teams Administator to the Service Mana
 
 ## Conclusion
 The above 4 scripts are the only scripts run against your Tenant during the Automated Self-Service configuration journey
+When this is concluded the main enterprise app used to configure the Tenant is remove automatically EA-HALO-PLATFORMAUTOMATION
 
 For more information on the Teams Direct Routing - Configuration the following link will descibe the Enterprise Apps and the process steps involved when running the Automated Teams Direct Routing Provisioning
 
